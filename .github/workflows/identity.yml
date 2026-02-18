@@ -1,0 +1,14 @@
+name: Identity Verification
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 22f2000537@ds.study.iitm.ac.in
+        run: echo "Verified identity for GA2"
